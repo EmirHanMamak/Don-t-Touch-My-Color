@@ -1,18 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Bounds : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Vector3 backVector;
+    [SerializeField] private Vector3 upVector;
+    [SerializeField] private Vector3 rightVector;
+    [SerializeField] private Vector3 leftVector;
 
-    // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
-        
+        Vector3 viewVector = transform.position;
+        viewVector.z = Mathf.Clamp(viewVector.z, backVector.z, upVector.z);
+        viewVector.x = Mathf.Clamp(viewVector.x, leftVector.x, rightVector.x);
+        transform.position = viewVector;
     }
 }
