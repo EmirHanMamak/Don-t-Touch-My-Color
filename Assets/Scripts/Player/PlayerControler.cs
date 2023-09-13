@@ -1,19 +1,25 @@
+using Core;
 using UnityEngine;
 
-public class PlayerControler : MonoBehaviour
+namespace Player
+{
+    public class PlayerControler : MonoBehaviour
 {
     enum Conditions
     {
-        CT_NONE,
+        CT_NONE,    
         CT_BEGAN,
         CT_MOVED,
         CT_CANCELED,
         CT_ENDED,
         CT_STATIONARY
     };
-
-    private Rigidbody _rigidbody;
+    [Range(20,40)]
     public float Speed;
+    public GameObject cam;
+    [SerializeField] private float fowardSpeed = 5f;
+    [SerializeField] private GameObject[] bounderVector;
+    private Rigidbody _rigidbody;
     private Touch _touch;
     private Conditions _currentCondition;
     private void Awake()
@@ -24,6 +30,15 @@ public class PlayerControler : MonoBehaviour
 
     private void Update()
     {
+        if (Variables.firstTouch == 1)
+        {
+            transform.position += new Vector3(0f, 0f, fowardSpeed * Time.deltaTime);
+            foreach (var bounders in bounderVector)
+            {
+                bounders.transform.position += new Vector3(0f, 0f, fowardSpeed * Time.deltaTime);
+            }
+        }
+        
         if (Input.touchCount > 0)
         {
             _touch = Input.GetTouch(0);
@@ -53,9 +68,14 @@ public class PlayerControler : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (Variables.firstTouch == 1)
+        {
+            cam.transform.position += new Vector3(0f, 0f, fowardSpeed * Time.deltaTime);
+        }
         switch (_currentCondition)
         {
            case Conditions.CT_BEGAN:
+               Variables.firstTouch = 1;
                 break;
            case Conditions.CT_MOVED:
                _rigidbody.velocity = new Vector3(_touch.deltaPosition.x * Speed * Time.fixedDeltaTime,
@@ -73,4 +93,5 @@ public class PlayerControler : MonoBehaviour
                break;
         }
     }
+}
 }
