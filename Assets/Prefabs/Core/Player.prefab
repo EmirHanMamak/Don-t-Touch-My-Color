@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1624368871412193725}
   - component: {fileID: 2486235131156555609}
   - component: {fileID: 8049539820316387516}
+  - component: {fileID: 4774652946005050342}
   m_Layer: 0
   m_Name: Sphere01_frag_08
   m_TagString: Untagged
@@ -107,10 +108,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &4774652946005050342
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6501121148989630}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -10.132962, y: 11.978579, z: 6.397479}
 --- !u!1 &14897988989720382
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,6 +145,7 @@ GameObject:
   - component: {fileID: 1086329011397293918}
   - component: {fileID: 8153607682643703825}
   - component: {fileID: 593212612199065672}
+  - component: {fileID: 7337461035016968331}
   m_Layer: 0
   m_Name: Sphere01_frag_22
   m_TagString: Untagged
@@ -218,10 +241,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &7337461035016968331
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14897988989720382}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -5.0116096, y: 20.488928, z: -7.744727}
 --- !u!1 &698827699805817666
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +278,7 @@ GameObject:
   - component: {fileID: 8551724811081506865}
   - component: {fileID: 6770767062328295500}
   - component: {fileID: 4422759691089234833}
+  - component: {fileID: 2043880659869434078}
   m_Layer: 0
   m_Name: Sphere01_frag_16
   m_TagString: Untagged
@@ -329,10 +374,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &2043880659869434078
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698827699805817666}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 5.365519, y: 13.013286, z: -8.813026}
 --- !u!1 &803026573220163907
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +411,7 @@ GameObject:
   - component: {fileID: 2116932839567760037}
   - component: {fileID: 6460975686907343126}
   - component: {fileID: 1123913534383683643}
+  - component: {fileID: 533858459134327121}
   m_Layer: 0
   m_Name: Sphere01_frag_06
   m_TagString: Untagged
@@ -440,10 +507,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &533858459134327121
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803026573220163907}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -7.4195137, y: 23.816755, z: -3.0785573}
 --- !u!1 &1179283575903462895
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +544,7 @@ GameObject:
   - component: {fileID: 4051765957483632050}
   - component: {fileID: 2290142812844598939}
   - component: {fileID: 8166082887070077326}
+  - component: {fileID: 4130040670575492047}
   m_Layer: 0
   m_Name: Sphere01_frag_04
   m_TagString: Untagged
@@ -551,10 +640,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &4130040670575492047
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179283575903462895}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 6.49033, y: 8.695589, z: 0.07093954}
 --- !u!1 &1329034727794972440
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +677,7 @@ GameObject:
   - component: {fileID: 3666792195268577110}
   - component: {fileID: 778110617402062501}
   - component: {fileID: 4097245933576292757}
+  - component: {fileID: 1358521260752717804}
   m_Layer: 0
   m_Name: Sphere01_frag_09
   m_TagString: Untagged
@@ -662,10 +773,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &1358521260752717804
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329034727794972440}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 6.3877673, y: 14.435247, z: 6.4836774}
 --- !u!1 &1336388531131931813
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,6 +810,7 @@ GameObject:
   - component: {fileID: 1219346274112044553}
   - component: {fileID: 2410494332143361902}
   - component: {fileID: 7893013164073841449}
+  - component: {fileID: 5525474012044925741}
   m_Layer: 0
   m_Name: Sphere01_frag_19
   m_TagString: Untagged
@@ -773,10 +906,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &5525474012044925741
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336388531131931813}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -9.03246, y: 21.711803, z: 6.9206347}
 --- !u!1 &1459249949927663128
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,6 +943,7 @@ GameObject:
   - component: {fileID: 8018876517111833869}
   - component: {fileID: 1414558781517272201}
   - component: {fileID: 3378740953107114902}
+  - component: {fileID: 6566337541656953285}
   m_Layer: 0
   m_Name: Sphere01_frag_10
   m_TagString: Untagged
@@ -884,10 +1039,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &6566337541656953285
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459249949927663128}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 3.4405398, y: 9.940821, z: 9.464869}
 --- !u!1 &1880172964144565744
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,6 +1076,7 @@ GameObject:
   - component: {fileID: 4663879278002670261}
   - component: {fileID: 4714378488623232092}
   - component: {fileID: 3492448971305494454}
+  - component: {fileID: 4683047077357239220}
   m_Layer: 0
   m_Name: Sphere01_frag_03
   m_TagString: Untagged
@@ -995,10 +1172,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &4683047077357239220
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880172964144565744}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -3.5100465, y: 18.993279, z: -2.123516}
 --- !u!1 &1927174061244872354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1209,7 @@ GameObject:
   - component: {fileID: 1284909891839265369}
   - component: {fileID: 1507331510653080242}
   - component: {fileID: 7818019803712876601}
+  - component: {fileID: 7890362814882586263}
   m_Layer: 0
   m_Name: Sphere01_frag_24
   m_TagString: Untagged
@@ -1106,10 +1305,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &7890362814882586263
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927174061244872354}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -3.5823848, y: 10.639509, z: -8.50245}
 --- !u!1 &2719427113457700536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,6 +1342,7 @@ GameObject:
   - component: {fileID: 1460702143563698619}
   - component: {fileID: 6532377447702237952}
   - component: {fileID: 8791394792089753629}
+  - component: {fileID: 8340703159139903269}
   m_Layer: 0
   m_Name: Sphere01_frag_01
   m_TagString: Untagged
@@ -1217,10 +1438,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &8340703159139903269
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719427113457700536}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -7.6484127, y: 14.488349, z: -1.4850638}
 --- !u!1 &2784964941971731788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,6 +1604,7 @@ GameObject:
   - component: {fileID: 9107072567977433710}
   - component: {fileID: 5419857404985204936}
   - component: {fileID: 2556925694201195394}
+  - component: {fileID: 78500433689284547}
   m_Layer: 0
   m_Name: Sphere01_frag_07
   m_TagString: Untagged
@@ -1457,10 +1700,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &78500433689284547
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2789868425406850561}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -3.3523798, y: 9.936323, z: 8.802123}
 --- !u!1 &2866881187590756964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,6 +1737,7 @@ GameObject:
   - component: {fileID: 1071371378225849709}
   - component: {fileID: 8214113731235426490}
   - component: {fileID: 3107211530416272791}
+  - component: {fileID: 5202333497629531943}
   m_Layer: 0
   m_Name: Sphere01_frag_15
   m_TagString: Untagged
@@ -1568,10 +1833,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &5202333497629531943
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2866881187590756964}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 5.222578, y: 21.634703, z: -5.657103}
 --- !u!1 &2907271655155306823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,6 +1870,7 @@ GameObject:
   - component: {fileID: 5765900799298793784}
   - component: {fileID: 1026871953732724026}
   - component: {fileID: 2886127426525922246}
+  - component: {fileID: 5629341438081929772}
   m_Layer: 0
   m_Name: Sphere01_frag_20
   m_TagString: Untagged
@@ -1679,10 +1966,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &5629341438081929772
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2907271655155306823}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -2.781876, y: 18.004257, z: 7.824733}
 --- !u!1 &2951317731296911594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1695,6 +2003,7 @@ GameObject:
   - component: {fileID: 3216795370371649409}
   - component: {fileID: 2376267213561074116}
   - component: {fileID: 808218352818260900}
+  - component: {fileID: 667142378934340337}
   m_Layer: 0
   m_Name: Sphere01_frag_12
   m_TagString: Untagged
@@ -1790,10 +2099,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &667142378934340337
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2951317731296911594}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -4.5195584, y: 7.7501125, z: -1.2681255}
 --- !u!1 &3251991380017834840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,6 +2136,7 @@ GameObject:
   - component: {fileID: 2575041849246263551}
   - component: {fileID: 74881404023236503}
   - component: {fileID: 5261396093995538505}
+  - component: {fileID: 3064394055384890130}
   m_Layer: 0
   m_Name: Sphere01_frag_31
   m_TagString: Untagged
@@ -1901,10 +2232,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &3064394055384890130
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251991380017834840}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 4.165642, y: 21.923403, z: 1.2786734}
 --- !u!1 &3377403850994138672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1917,6 +2269,7 @@ GameObject:
   - component: {fileID: 7611820839025893020}
   - component: {fileID: 7888761916858951797}
   - component: {fileID: 512278881538755966}
+  - component: {fileID: 172036141640728766}
   m_Layer: 0
   m_Name: Sphere01_frag_23
   m_TagString: Untagged
@@ -2012,10 +2365,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &172036141640728766
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3377403850994138672}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -0.93184566, y: 15.363031, z: -5.6507554}
 --- !u!1 &3755430577779719719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,6 +2488,7 @@ GameObject:
   - component: {fileID: 3403415952673042443}
   - component: {fileID: 3973282239473938323}
   - component: {fileID: 4405283732971760121}
+  - component: {fileID: 7930886311603640760}
   m_Layer: 0
   m_Name: Sphere01_frag_13
   m_TagString: Untagged
@@ -2209,10 +2584,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &7930886311603640760
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3945387467081841941}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -6.97898, y: 10.050782, z: 0.0126132965}
 --- !u!1 &3988473892088067062
 GameObject:
   m_ObjectHideFlags: 0
@@ -2225,6 +2621,7 @@ GameObject:
   - component: {fileID: 2146025121235176221}
   - component: {fileID: 7588119065597932686}
   - component: {fileID: 4004100421427435341}
+  - component: {fileID: 717242711695368291}
   m_Layer: 0
   m_Name: Sphere01_frag_05
   m_TagString: Untagged
@@ -2320,10 +2717,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &717242711695368291
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3988473892088067062}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 1.4892476, y: 23.045507, z: 0.605242}
 --- !u!1 &4920041178218273797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,6 +2754,7 @@ GameObject:
   - component: {fileID: 5492592879439031830}
   - component: {fileID: 8821171417655912887}
   - component: {fileID: 2869410537952181911}
+  - component: {fileID: 4715392762157386651}
   m_Layer: 0
   m_Name: Sphere01_frag_25
   m_TagString: Untagged
@@ -2431,10 +2850,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &4715392762157386651
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4920041178218273797}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 6.6029415, y: 11.979521, z: -5.211174}
 --- !u!1 &5336091573824040417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,6 +2887,7 @@ GameObject:
   - component: {fileID: 6893129512806549248}
   - component: {fileID: 8107520400523192129}
   - component: {fileID: 5006897147437310255}
+  - component: {fileID: 1606779991015537433}
   m_Layer: 0
   m_Name: Sphere01_frag_29
   m_TagString: Untagged
@@ -2542,10 +2983,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &1606779991015537433
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5336091573824040417}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -0.31419706, y: 11.168963, z: 3.9377189}
 --- !u!1 &5409648833938313523
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,6 +3020,7 @@ GameObject:
   - component: {fileID: 2304807954555532007}
   - component: {fileID: 7653017989654444227}
   - component: {fileID: 3552224305373684545}
+  - component: {fileID: 7436317224841815876}
   m_Layer: 0
   m_Name: Sphere01_frag_30
   m_TagString: Untagged
@@ -2653,10 +3116,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &7436317224841815876
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5409648833938313523}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -0.95272446, y: 5.0781007, z: 4.134593}
 --- !u!1 &5744615930169746662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2669,6 +3153,7 @@ GameObject:
   - component: {fileID: 7237301631464575693}
   - component: {fileID: 4497601385385132734}
   - component: {fileID: 4931211452005669335}
+  - component: {fileID: 3214701096537457101}
   m_Layer: 0
   m_Name: Sphere01_frag_32
   m_TagString: Untagged
@@ -2764,10 +3249,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &3214701096537457101
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5744615930169746662}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -3.4471989, y: 20.574528, z: -3.9960322}
 --- !u!1 &5940747677992336053
 GameObject:
   m_ObjectHideFlags: 0
@@ -2780,6 +3286,7 @@ GameObject:
   - component: {fileID: 2314681403674038528}
   - component: {fileID: 6746121608457809736}
   - component: {fileID: 4887195692727959294}
+  - component: {fileID: 6861664696462254358}
   m_Layer: 0
   m_Name: Sphere01_frag_21
   m_TagString: Untagged
@@ -2875,10 +3382,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &6861664696462254358
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5940747677992336053}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 2.115604, y: 24.153692, z: -5.314525}
 --- !u!1 &6338094879322442744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2891,6 +3419,7 @@ GameObject:
   - component: {fileID: 1130234163820186348}
   - component: {fileID: 1055830382172896858}
   - component: {fileID: 17513359309045757}
+  - component: {fileID: 334000750901487798}
   m_Layer: 0
   m_Name: Sphere01_frag_11
   m_TagString: Untagged
@@ -2986,10 +3515,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &334000750901487798
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6338094879322442744}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 2.7273073, y: 7.4723625, z: -3.582183}
 --- !u!1 &6343245300816055505
 GameObject:
   m_ObjectHideFlags: 0
@@ -3002,6 +3552,7 @@ GameObject:
   - component: {fileID: 383001070376917755}
   - component: {fileID: 2954228112913015374}
   - component: {fileID: 5315774629412450686}
+  - component: {fileID: 5553062177791555011}
   m_Layer: 0
   m_Name: Sphere01_frag_17
   m_TagString: Untagged
@@ -3097,10 +3648,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &5553062177791555011
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6343245300816055505}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 7.4858265, y: 12.120375, z: -3.5495625}
 --- !u!1 &6521382741914059265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3113,6 +3685,7 @@ GameObject:
   - component: {fileID: 6369242522361384521}
   - component: {fileID: 1179824421708464057}
   - component: {fileID: 3990833867193095457}
+  - component: {fileID: 3831753952795664829}
   m_Layer: 0
   m_Name: Sphere01_frag_14
   m_TagString: Untagged
@@ -3208,10 +3781,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &3831753952795664829
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6521382741914059265}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: -7.962328, y: 13.170556, z: -6.182117}
 --- !u!1 &7013194990479484571
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,6 +3818,7 @@ GameObject:
   - component: {fileID: 3794000985162980772}
   - component: {fileID: 5333033360367832908}
   - component: {fileID: 5158449777964790558}
+  - component: {fileID: 7841510654953750737}
   m_Layer: 0
   m_Name: Sphere01_frag_18
   m_TagString: Untagged
@@ -3319,10 +3914,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &7841510654953750737
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013194990479484571}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 7.499737, y: 19.238392, z: 1.4424317}
 --- !u!1 &7448107960309500915
 GameObject:
   m_ObjectHideFlags: 0
@@ -3335,6 +3951,7 @@ GameObject:
   - component: {fileID: 7309990237771343438}
   - component: {fileID: 3838265541071091166}
   - component: {fileID: 6949173189930590141}
+  - component: {fileID: 586485544908933451}
   m_Layer: 0
   m_Name: Sphere01_frag_26
   m_TagString: Untagged
@@ -3430,10 +4047,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &586485544908933451
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7448107960309500915}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 6.9231777, y: 19.693674, z: -3.2171822}
 --- !u!1 &7683739041366536022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3446,6 +4084,7 @@ GameObject:
   - component: {fileID: 3761833254313246598}
   - component: {fileID: 2233308340129741582}
   - component: {fileID: 1878586937623892814}
+  - component: {fileID: 2883861900404004246}
   m_Layer: 0
   m_Name: Sphere01_frag_27
   m_TagString: Untagged
@@ -3541,10 +4180,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &2883861900404004246
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7683739041366536022}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 0.3495016, y: 23.301037, z: 6.931456}
 --- !u!1 &7882347954285631606
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,6 +4217,7 @@ GameObject:
   - component: {fileID: 8296485943667339613}
   - component: {fileID: 4040975866100568635}
   - component: {fileID: 4264950183223251892}
+  - component: {fileID: 7926827779654769604}
   m_Layer: 0
   m_Name: Sphere01_frag_28
   m_TagString: Untagged
@@ -3652,10 +4313,31 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &7926827779654769604
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7882347954285631606}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 1.1584961, y: 18.275671, z: 9.471994}
 --- !u!1 &8422902201332317684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3751,6 +4433,7 @@ GameObject:
   - component: {fileID: 1281077959329123430}
   - component: {fileID: 241754477759890130}
   - component: {fileID: 5024843551053282185}
+  - component: {fileID: 963636320276960005}
   m_Layer: 0
   m_Name: Sphere01_frag_02
   m_TagString: Untagged
@@ -3846,7 +4529,28 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &963636320276960005
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9021208271177656558}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2.8
+  m_Center: {x: 7.7308087, y: 21.53015, z: 8.8681965}

@@ -1,5 +1,6 @@
 using System;
 using Core;
+using Core.Camera;
 using UnityEngine;
 
 namespace Player
@@ -15,6 +16,8 @@ namespace Player
         CT_ENDED,
         CT_STATIONARY
     };
+
+    public CameraShack CameraShackVar;
     [Range(20,40)]
     public float Speed;
     public GameObject cam;
@@ -100,6 +103,7 @@ namespace Player
     {
         if (hit.gameObject.CompareTag("Obstacles"))
         {
+            CameraShackVar.CameraShackCall();
             gameObject.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
             foreach (var furture in Furtures)
             {
