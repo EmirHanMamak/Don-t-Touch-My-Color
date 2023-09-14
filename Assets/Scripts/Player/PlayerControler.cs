@@ -1,3 +1,4 @@
+using System;
 using Core;
 using UnityEngine;
 
@@ -17,6 +18,7 @@ namespace Player
     [Range(20,40)]
     public float Speed;
     public GameObject cam;
+    public GameObject [] Furtures;
     [SerializeField] private float fowardSpeed = 5f;
     [SerializeField] private GameObject[] bounderVector;
     private Rigidbody _rigidbody;
@@ -91,6 +93,19 @@ namespace Player
                break;
            case Conditions.CT_NONE:
                break;
+        }
+    }
+
+    private void OnCollisionEnter(Collision hit)
+    {
+        if (hit.gameObject.CompareTag("Obstacles"))
+        {
+            gameObject.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+            foreach (var furture in Furtures)
+            {
+                furture.GetComponent<SphereCollider>().enabled = true;
+                furture.GetComponent<Rigidbody>().isKinematic = false;
+            }
         }
     }
 }
