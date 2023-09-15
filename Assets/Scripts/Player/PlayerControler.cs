@@ -1,6 +1,7 @@
 using System;
 using Core;
 using Core.Camera;
+using Core.Canvas;
 using UnityEngine;
 
 namespace Player
@@ -18,6 +19,7 @@ namespace Player
     };
 
     public CameraShack CameraShackVar;
+    public UIManager UIManagerVar;
     [Range(20,40)]
     public float Speed;
     public GameObject cam;
@@ -110,6 +112,8 @@ namespace Player
                 furture.GetComponent<SphereCollider>().enabled = true;
                 furture.GetComponent<Rigidbody>().isKinematic = false;
             }
+
+            StartCoroutine(UIManagerVar.Fade());
         }
     }
 }
