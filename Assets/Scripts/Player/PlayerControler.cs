@@ -29,6 +29,7 @@ namespace Player
     private Rigidbody _rigidbody;
     private Touch _touch;
     private Conditions _currentCondition;
+    private LevelDesignController _levelDesignController;
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -112,7 +113,6 @@ namespace Player
                 furture.GetComponent<SphereCollider>().enabled = true;
                 furture.GetComponent<Rigidbody>().isKinematic = false;
             }
-
             StartCoroutine(UIManagerVar.Fade());
         }
     }
