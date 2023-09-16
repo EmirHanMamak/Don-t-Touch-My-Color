@@ -103,7 +103,7 @@ namespace Player
 
     private void OnCollisionEnter(Collision hit)
     {
-        if (hit.gameObject.CompareTag("Obstacles"))
+        if (hit.gameObject.CompareTag("Enemy"))
         {
             CameraShackVar.CameraShackCall();
             gameObject.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
