@@ -8,19 +8,49 @@ namespace Core.Canvas
     public class UIManager : MonoBehaviour
     { 
     [SerializeField] private Image fadeImage;
-    [SerializeField] private Animator _settingsAnimator;
+    [SerializeField] private Animator settingsAnimator;
         private float _fadeOutInTime = 0.5f;
         private int _effectControl = 0;
+        /*
+         * BUTTONS
+         */
+        [SerializeField] private GameObject settingsOpen, settingsClose;
+        [SerializeField] private GameObject soundOpen, soundClose;
+        [SerializeField] private GameObject vibrationOpen, vibrationClose;
 
+        public void SoundButtonOn()
+        {
+            soundOpen.SetActive(false);
+            soundClose.SetActive(true);
+        }
+        public void SoundButtonOff()
+        {
+            soundOpen.SetActive(true);
+            soundClose.SetActive(false);
+        }        
+        public void VirbationButtonOn()
+        {
+            vibrationOpen.SetActive(false);
+            vibrationClose.SetActive(true);
+        }
+        public void VirbationButtonOff()
+        {
+            vibrationOpen.SetActive(true);
+            vibrationClose.SetActive(false);
+        }
         public void SettingsButonOpen()
         {
-            _settingsAnimator.SetTrigger("SettingsOpen");
-            _settingsAnimator.ResetTrigger("SettingsClose");
+            settingsAnimator.SetTrigger("SettingsOpen");
+            settingsAnimator.ResetTrigger("SettingsClose");
+            settingsOpen.SetActive(false);
+            settingsClose.SetActive(true);
         }
         public void SettingsButonClose()
         {
-            _settingsAnimator.SetTrigger("SettingsClose");
-            _settingsAnimator.ResetTrigger("SettingsOpen");
+            settingsAnimator.SetTrigger("SettingsClose");
+            settingsAnimator.ResetTrigger("SettingsOpen");
+            settingsOpen.SetActive(true);
+            settingsClose.SetActive(false);
         }
         public IEnumerator Fade()
         {

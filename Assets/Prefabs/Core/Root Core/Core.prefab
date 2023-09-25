@@ -43,6 +43,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1386719096414105683}
     m_Modifications:
+    - target: {fileID: 585410331717642730, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 692395928150977777}
+    - target: {fileID: 585410331717642730, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SoundButtonOn
+      objectReference: {fileID: 0}
+    - target: {fileID: 585410331717642730, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Core.Canvas.UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 585410331717642730, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1052126052219710163, guid: b4207682162da2f4b834d96119c54c1b,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -67,6 +87,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106063225896408540, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 692395928150977777}
+    - target: {fileID: 4106063225896408540, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: VirbationButtonOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106063225896408540, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Core.Canvas.UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106063225896408540, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982478138449492950, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 692395928150977777}
+    - target: {fileID: 4982478138449492950, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: VirbationButtonOn
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982478138449492950, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Core.Canvas.UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982478138449492950, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6201475912960400852, guid: b4207682162da2f4b834d96119c54c1b,
         type: 3}
@@ -227,6 +287,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8312677171646845257, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 692395928150977777}
+    - target: {fileID: 8312677171646845257, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SoundButtonOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 8312677171646845257, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Core.Canvas.UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8312677171646845257, guid: b4207682162da2f4b834d96119c54c1b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
