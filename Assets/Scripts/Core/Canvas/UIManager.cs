@@ -6,11 +6,22 @@ using UnityEngine.UI;
 namespace Core.Canvas
 {
     public class UIManager : MonoBehaviour
-    {
-        [SerializeField] private Image fadeImage;
+    { 
+    [SerializeField] private Image fadeImage;
+    [SerializeField] private Animator _settingsAnimator;
         private float _fadeOutInTime = 0.5f;
         private int _effectControl = 0;
-        
+
+        public void SettingsButonOpen()
+        {
+            _settingsAnimator.SetTrigger("SettingsOpen");
+            _settingsAnimator.ResetTrigger("SettingsClose");
+        }
+        public void SettingsButonClose()
+        {
+            _settingsAnimator.SetTrigger("SettingsClose");
+            _settingsAnimator.ResetTrigger("SettingsOpen");
+        }
         public IEnumerator Fade()
         {
             //yield return new WaitForSeconds(0.15f);
