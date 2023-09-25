@@ -1611,7 +1611,15 @@ MonoBehaviour:
   LevelDesign:
   - {fileID: 11400000, guid: d5bdd25875cfa2b4cacd4c3028283ab3, type: 2}
   - {fileID: 11400000, guid: 444b1b367606f5749aa3078ecf5f49ab, type: 2}
-  _renderer: {fileID: 0}
+  - {fileID: 11400000, guid: e6f1e73609a372048a7fe389efe84313, type: 2}
+  - {fileID: 11400000, guid: 82da0123df52cff4e9467eda235265b0, type: 2}
+  - {fileID: 11400000, guid: 8341370d6c1250e439ce7e8e0b8647c9, type: 2}
+  - {fileID: 11400000, guid: b1061c02270e6e248882124c3c1565cf, type: 2}
+  - {fileID: 11400000, guid: b54a9ce771331b840800baea9f5aca8d, type: 2}
+  - {fileID: 11400000, guid: cfc601be488e5224c94ce49545f4e830, type: 2}
+  - {fileID: 11400000, guid: 505a6558d207f264e874ef295d5bedc0, type: 2}
+  - {fileID: 11400000, guid: b6321fbb02553664194368f3b42b0daa, type: 2}
+  - {fileID: 11400000, guid: 0421182b553d3a3419d2c20ed21603c6, type: 2}
 --- !u!23 &4507460428302216619
 MeshRenderer:
   m_ObjectHideFlags: 0
