@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Core.Tag;
+using UnityEditor.TerrainTools;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -15,23 +16,50 @@ namespace Core.Canvas
         private static int CT_OFF = 0, CT_ON = 1;
         private float _fadeOutInTime = 0.5f;
         private int _effectControl = 0;
+
+        public bool isGameStarted;
+        private bool canRepat = false;
         /*
          * BUTTONS
          */
         [SerializeField] private GameObject settingsOpen, settingsClose;
-        [SerializeField] private GameObject soundOpen, soundClose;
-        [FormerlySerializedAs("vibrationOpen")] [SerializeField] private GameObject hapticOpen;
-        [FormerlySerializedAs("vibrationClose")] [SerializeField] private GameObject hapticClose;
+        [SerializeField] private GameObject soundOpen, soundClose; 
+        [SerializeField] private GameObject vibrationOpen, vibrationClose; 
+        [SerializeField] private GameObject [] gameBegin; 
+        //[SerializeField] private GameObject [] gameEnd; 
         private string _privacyPolicyUrl = "https://www.emirhanmamak.com/privacy-policy/";
         private string _termsOfUse = "https://www.emirhanmamak.com/term-of-use/";
 
         private void Start()
         {
             CheckHasKey();
-
             CheckConditions();
+            StartCoroutine(GameBegin());
         }
 
+        IEnumerator GameBegin()
+        {
+            yield return new WaitUntil(() => isGameStarted);
+            yield return new WaitForSeconds(0.3f);
+            FirstTouch();
+            //Debug.Log("Once Worked");
+        }
+        private void Update()
+        {
+            if (Variables.firstTouch == 1 && !canRepat)
+            {
+                isGameStarted = true;
+                canRepat = true;
+            }
+        }
+
+        private void FirstTouch()
+        {
+            foreach (var closeCanvasObjects in gameBegin)
+            {
+                closeCanvasObjects.SetActive(false);
+            }
+        }
         private void CheckConditions()
         {
             /*
@@ -95,14 +123,14 @@ namespace Core.Canvas
         }        
         public void HapticButtonOn()
         {
-            hapticOpen.SetActive(false);
-            hapticClose.SetActive(true);
+            vibrationOpen.SetActive(false);
+            vibrationClose.SetActive(true);
             PlayerPrefs.SetInt(TagList.PP_Haptic, CT_ON);
         }
         public void HapticButtonOff()
         {
-            hapticOpen.SetActive(true);
-            hapticClose.SetActive(false);
+            vibrationOpen.SetActive(true);
+            vibrationClose.SetActive(false);
             PlayerPrefs.SetInt(TagList.PP_Haptic, CT_OFF);
         }
         public void SettingsButonOpen()

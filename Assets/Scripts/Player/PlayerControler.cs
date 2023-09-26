@@ -31,6 +31,8 @@ namespace Player
     private Touch _touch;
     private Conditions _currentCondition;
     private LevelDesignController _levelDesignController;
+
+    private bool isFoward, isBack, isRight, isLeft = false;
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -41,7 +43,9 @@ namespace Player
     {
         if (Variables.firstTouch == 1)
         {
+            isFoward = true;
             transform.position += new Vector3(0f, 0f, fowardSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.right,Space.World);
             foreach (var bounders in bounderVector)
             {
                 bounders.transform.position += new Vector3(0f, 0f, fowardSpeed * Time.deltaTime);

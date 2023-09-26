@@ -1980,12 +1980,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 1531392001428894407}
   settingsAnimator: {fileID: 759862942343510542}
+  isGameStarted: 0
   settingsOpen: {fileID: 8732435480740036115}
   settingsClose: {fileID: 1017092249593684403}
   soundOpen: {fileID: 469585356435869017}
   soundClose: {fileID: 43986154174146380}
-  hapticOpen: {fileID: 4111340053443079463}
-  hapticClose: {fileID: 2853386969491208160}
+  vibrationOpen: {fileID: 4111340053443079463}
+  vibrationClose: {fileID: 2853386969491208160}
+  gameBegin:
+  - {fileID: 6264309740217198226}
+  - {fileID: 4305599243430758487}
 --- !u!1 &3187085898559113875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2460,7 +2464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 9.220459, y: -7.376526}
+  m_AnchoredPosition: {x: 9.220459, y: -7.376465}
   m_SizeDelta: {x: 77.4517, y: 51.6345}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7432356582143033680
