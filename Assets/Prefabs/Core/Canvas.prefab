@@ -1827,13 +1827,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3151695257623014091}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 955832835761605020}
+        m_TargetAssemblyTypeName: Core.Canvas.UIManager, Assembly-CSharp
+        m_MethodName: HapticButtonOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1984,8 +1984,8 @@ MonoBehaviour:
   settingsClose: {fileID: 1017092249593684403}
   soundOpen: {fileID: 469585356435869017}
   soundClose: {fileID: 43986154174146380}
-  vibrationOpen: {fileID: 4111340053443079463}
-  vibrationClose: {fileID: 2853386969491208160}
+  hapticOpen: {fileID: 4111340053443079463}
+  hapticClose: {fileID: 2853386969491208160}
 --- !u!1 &3187085898559113875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2316,13 +2316,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3151695257623014091}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 955832835761605020}
+        m_TargetAssemblyTypeName: Core.Canvas.UIManager, Assembly-CSharp
+        m_MethodName: HapticButtonOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2443,7 +2443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8784794074880826797
 RectTransform:
   m_ObjectHideFlags: 0

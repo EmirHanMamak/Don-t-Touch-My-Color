@@ -96,7 +96,7 @@ PrefabInstance:
     - target: {fileID: 4106063225896408540, guid: b4207682162da2f4b834d96119c54c1b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: VirbationButtonOff
+      value: HapticButtonOff
       objectReference: {fileID: 0}
     - target: {fileID: 4106063225896408540, guid: b4207682162da2f4b834d96119c54c1b,
         type: 3}
@@ -116,7 +116,7 @@ PrefabInstance:
     - target: {fileID: 4982478138449492950, guid: b4207682162da2f4b834d96119c54c1b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: VirbationButtonOn
+      value: HapticButtonOn
       objectReference: {fileID: 0}
     - target: {fileID: 4982478138449492950, guid: b4207682162da2f4b834d96119c54c1b,
         type: 3}
