@@ -17,7 +17,16 @@ namespace Core.Canvas
         [SerializeField] private GameObject settingsOpen, settingsClose;
         [SerializeField] private GameObject soundOpen, soundClose;
         [SerializeField] private GameObject vibrationOpen, vibrationClose;
-
+        private string _privacyPolicyUrl = "https://www.emirhanmamak.com/privacy-policy/";
+        private string _termsOfUse = "https://www.emirhanmamak.com/term-of-use/";
+        public void PrivacyPolicyClick()
+        {
+            Application.OpenURL(_privacyPolicyUrl);
+        }
+        public void TermsOfUseClick()
+        {
+            Application.OpenURL(_termsOfUse);
+        }
         public void SoundButtonOn()
         {
             soundOpen.SetActive(false);
