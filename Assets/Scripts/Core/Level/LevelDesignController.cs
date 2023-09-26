@@ -6,69 +6,72 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
-public class LevelDesignController : MonoBehaviour
+namespace Core.Level
 {
-    public LevelDesign[] LevelDesign;
-    private Renderer _renderer;
-    private SceneManager _sceneManager;
+    public class LevelDesignController : MonoBehaviour
+    {
+        public LevelDesign[] LevelDesign;
+        private Renderer _renderer;
+        private SceneManager _sceneManager;
+        
+        private void Awake()
+        {
+            _renderer = GetComponent<Renderer>();
+        }
+        private void Start()
+        {
     
-    private void Awake()
-    {
-        _renderer = GetComponent<Renderer>();
-    }
-    private void Start()
-    {
-
-        Debug.Log(SceneManager.GetActiveScene().name);
-        for (int i = 0; i < LevelDesign.Length; i++)
-        {
-            Debug.LogWarning("Level-" + i);
-            if (SceneManager.GetActiveScene().name == "Level-" + i)
+            Debug.Log(SceneManager.GetActiveScene().name);
+            for (int i = 0; i < LevelDesign.Length; i++)
             {
-                //Debug.LogWarning("Level-" + i);
-                //Friendly Obstacles
-                ForFriendly(i);
-                //Enemy Obstacles
-                ForEnemy(i);
-                //Player
-                ForPlayer(i);
-                //Ground
-                ForGrounds(i);
+                Debug.LogWarning("Level-" + i);
+                if (SceneManager.GetActiveScene().name == "Level-" + i)
+                {
+                    //Debug.LogWarning("Level-" + i);
+                    //Friendly Obstacles
+                    ForFriendly(i);
+                    //Enemy Obstacles
+                    ForEnemy(i);
+                    //Player
+                    ForPlayer(i);
+                    //Ground
+                    ForGrounds(i);
+                }
             }
         }
-    }
-    private void ForPlayer(int i)
-    {
-        if (gameObject.CompareTag("Player"))
+        private void ForPlayer(int i)
         {
-            GameObject player = gameObject.transform.GetChild(0).gameObject;
-            foreach (Transform child in player.transform)
+            if (gameObject.CompareTag("Player"))
             {
-                Renderer renderer = new Renderer();
-                child.GetComponent<Renderer>().material.color = LevelDesign[i - 1].MyPlayerColor;
+                GameObject player = gameObject.transform.GetChild(0).gameObject;
+                foreach (Transform child in player.transform)
+                {
+                    Renderer renderer = new Renderer();
+                    child.GetComponent<Renderer>().material.color = LevelDesign[i - 1].MyPlayerColor;
+                }
             }
         }
-    }
-    private void ForEnemy(int i)
-    {
-        if (gameObject.CompareTag("Enemy"))
+        private void ForEnemy(int i)
         {
-            _renderer.material.color = LevelDesign[i - 1].EnemyColor;
+            if (gameObject.CompareTag("Enemy"))
+            {
+                _renderer.material.color = LevelDesign[i - 1].EnemyColor;
+            }
         }
-    }
-
-    private void ForFriendly(int i)
-    {
-        if (gameObject.CompareTag("Friendly"))
+    
+        private void ForFriendly(int i)
         {
-            _renderer.material.color = LevelDesign[i - 1].FriendlyColor;
+            if (gameObject.CompareTag("Friendly"))
+            {
+                _renderer.material.color = LevelDesign[i - 1].FriendlyColor;
+            }
         }
-    }
-    private void ForGrounds(int i)
-    {
-        if (gameObject.CompareTag("Ground"))
+        private void ForGrounds(int i)
         {
-            _renderer.material.color = LevelDesign[i - 1].GroundColor;
+            if (gameObject.CompareTag("Ground"))
+            {
+                _renderer.material.color = LevelDesign[i - 1].GroundColor;
+            }
         }
     }
 }

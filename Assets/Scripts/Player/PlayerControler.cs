@@ -2,6 +2,7 @@ using System;
 using Core;
 using Core.Camera;
 using Core.Canvas;
+using Core.Level;
 using UnityEngine;
 
 namespace Player
