@@ -15,13 +15,14 @@ namespace Core.Canvas
         private static int CT_OFF = 0, CT_ON = 1;
         private float _fadeOutInTime = 0.5f;
         private int _effectControl = 0;
-        public bool isGameStarted, isGameRestart;
+        public bool isGameStarted, isGameRestart, isFinish;
         private bool canRepat = false;
         /*
          * Panels
          */
         [SerializeField] private GameObject _restartPanel;
         [SerializeField] private GameObject _infoPanel;
+        [SerializeField] private GameObject _finishLevelPanel;
 
         /*
          * BUTTONS
@@ -46,6 +47,7 @@ namespace Core.Canvas
 
         private void Update()
         {
+            if(Variables.GameCondition == Variables.GC_NONE) return;
             if (Variables.GameCondition == Variables.GC_Started && !canRepat && Variables.firstTouch == 1)
             {
                 StartCoroutine(GameBegin());
@@ -60,6 +62,11 @@ namespace Core.Canvas
                 isGameRestart = true;
                 isGameStarted = false;
                 canRepat = true;
+            }
+
+            if (Variables.GameCondition == Variables.GC_NEXTLEVEL)
+            {
+                _finishLevelPanel.SetActive(true);
             }
         }
         IEnumerator GameBegin()
@@ -187,6 +194,11 @@ namespace Core.Canvas
             isGameRestart = false;
         }
 
+        public void NextLevelButton()
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(Application.loadedLevel + 1);
+        }
         public void AdsButton()
         {
             
@@ -195,6 +207,7 @@ namespace Core.Canvas
         {
             _restartPanel.SetActive(false);
             _infoPanel.SetActive(false);
+            _finishLevelPanel.SetActive(false);
         }
         public IEnumerator Fade()
         {

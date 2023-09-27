@@ -1549,7 +1549,6 @@ MonoBehaviour:
   - {fileID: 5409648833938313523}
   - {fileID: 3251991380017834840}
   - {fileID: 5744615930169746662}
-  fowardSpeed: 4
   bounderVector:
   - {fileID: 0}
   - {fileID: 0}
@@ -2472,7 +2471,7 @@ GameObject:
   - component: {fileID: 7200204610883902464}
   m_Layer: 0
   m_Name: ball
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

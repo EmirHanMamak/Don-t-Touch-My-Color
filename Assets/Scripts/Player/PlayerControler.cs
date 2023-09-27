@@ -37,6 +37,7 @@ namespace Player
     {
         _rigidbody = GetComponent<Rigidbody>();
         _currentCondition = Conditions.CT_NONE;
+        Variables.GameCondition = Variables.GC_NONE;
     }
     private void Update()
     {
