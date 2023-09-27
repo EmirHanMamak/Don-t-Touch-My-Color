@@ -12,6 +12,7 @@ public class LevelDesign : ScriptableObject
     public Color EnemyColor;
         
     public Color GroundColor;
+    public int CurrentLevelIndex;
 
     public float fowardSpeed;
 /*

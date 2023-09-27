@@ -10,6 +10,13 @@ namespace Core.Canvas
 {
     public class UIManager : MonoBehaviour
     {
+        /**
+         * LevelProcess
+         */
+        [SerializeField] public GameObject _player;
+        [SerializeField] public GameObject _finishLine;
+        [SerializeField] private Image _fillImage;
+
         [SerializeField] private Image fadeImage;
         [SerializeField] private Animator settingsAnimator;
         private static int CT_OFF = 0, CT_ON = 1;
@@ -70,6 +77,13 @@ namespace Core.Canvas
                 StartCoroutine(FinishPanel());
                 canRepat = false;
             }
+            LevelProcessBar();
+        }
+
+        private void LevelProcessBar()
+        {
+            _fillImage.fillAmount = (_player.gameObject.transform.position.z) / 
+                                    (_finishLine.gameObject.transform.position.z);
         }
 
         IEnumerator FinishPanel()
