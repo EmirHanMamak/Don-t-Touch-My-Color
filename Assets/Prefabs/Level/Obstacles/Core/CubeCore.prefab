@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4045056615297139155}
   - component: {fileID: 8019763072842055604}
   - component: {fileID: 2047557693951215448}
-  - component: {fileID: -8086622597510397063}
+  - component: {fileID: 7640480100536328327}
   m_Layer: 0
   m_Name: CubeCore
   m_TagString: Untagged
@@ -134,7 +134,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-8086622597510397063
+--- !u!114 &7640480100536328327
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d44a56a14315b3498ca9de4e330d8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StageLevelNumberText: {fileID: 0}
   LevelDesign:
   - {fileID: 11400000, guid: d5bdd25875cfa2b4cacd4c3028283ab3, type: 2}
   - {fileID: 11400000, guid: 444b1b367606f5749aa3078ecf5f49ab, type: 2}

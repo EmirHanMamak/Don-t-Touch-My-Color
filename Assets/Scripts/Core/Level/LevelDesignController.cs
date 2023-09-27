@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Core.Camera;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -38,6 +39,11 @@ namespace Core.Level
                     CameraFowardMovement(i);
                 }
             }
+        }
+
+        private void ForStage(int i)
+        {
+           // StageLevelNumberText.GetComponent<TMP_Text>().text = LevelDesign[i - 1].CurrentLevelIndex.ToString();
         }
 
         private void CameraFowardMovement(int i)
