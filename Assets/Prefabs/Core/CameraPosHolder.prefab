@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2624938948542661714}
+  - component: {fileID: 6730686521306598012}
+  - component: {fileID: 3811804504151339905}
   m_Layer: 0
   m_Name: CameraPosHolder
   m_TagString: Untagged
@@ -32,6 +34,43 @@ Transform:
   - {fileID: 897995111056871299}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
+--- !u!114 &6730686521306598012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359940090575061843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecee0d8b18614e64cbd25a5b43f81460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fowardSpeed: 5
+--- !u!114 &3811804504151339905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359940090575061843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d44a56a14315b3498ca9de4e330d8dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelDesign:
+  - {fileID: 11400000, guid: d5bdd25875cfa2b4cacd4c3028283ab3, type: 2}
+  - {fileID: 11400000, guid: 444b1b367606f5749aa3078ecf5f49ab, type: 2}
+  - {fileID: 11400000, guid: e6f1e73609a372048a7fe389efe84313, type: 2}
+  - {fileID: 11400000, guid: 82da0123df52cff4e9467eda235265b0, type: 2}
+  - {fileID: 11400000, guid: 8341370d6c1250e439ce7e8e0b8647c9, type: 2}
+  - {fileID: 11400000, guid: b1061c02270e6e248882124c3c1565cf, type: 2}
+  - {fileID: 11400000, guid: b54a9ce771331b840800baea9f5aca8d, type: 2}
+  - {fileID: 11400000, guid: cfc601be488e5224c94ce49545f4e830, type: 2}
+  - {fileID: 11400000, guid: 505a6558d207f264e874ef295d5bedc0, type: 2}
+  - {fileID: 11400000, guid: b6321fbb02553664194368f3b42b0daa, type: 2}
+  - {fileID: 11400000, guid: 0421182b553d3a3419d2c20ed21603c6, type: 2}
 --- !u!1001 &1082260520977750573
 PrefabInstance:
   m_ObjectHideFlags: 0

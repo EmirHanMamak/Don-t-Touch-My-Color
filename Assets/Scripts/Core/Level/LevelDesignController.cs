@@ -1,10 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using Core.Camera;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Random = UnityEngine.Random;
 
 namespace Core.Level
 {
@@ -36,9 +35,16 @@ namespace Core.Level
                     ForPlayer(i);
                     //Ground
                     ForGrounds(i);
+                    CameraFowardMovement(i);
                 }
             }
         }
+
+        private void CameraFowardMovement(int i)
+        {
+            Variables.fowardsSpeed = LevelDesign[i - 1].fowardSpeed;
+        }
+
         private void ForPlayer(int i)
         {
             if (gameObject.CompareTag("Player"))

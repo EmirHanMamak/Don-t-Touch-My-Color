@@ -12,6 +12,8 @@ public class LevelDesign : ScriptableObject
     public Color EnemyColor;
         
     public Color GroundColor;
+
+    public float fowardSpeed;
 /*
  * Renk Olacaklar
 1- Ground
@@ -19,5 +21,5 @@ public class LevelDesign : ScriptableObject
 3- Friendly
 4- Player
  */
-    
+
 }

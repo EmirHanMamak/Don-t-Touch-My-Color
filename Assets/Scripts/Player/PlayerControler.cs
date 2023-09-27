@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Core;
 using Core.Camera;
 using Core.Canvas;
@@ -25,7 +26,6 @@ namespace Player
     public float Speed;
     public GameObject cam;
     public GameObject [] Furtures;
-    [SerializeField] private float fowardSpeed = 5f;
     [SerializeField] private GameObject[] bounderVector;
     private Rigidbody _rigidbody;
     private Touch _touch;
@@ -38,17 +38,16 @@ namespace Player
         _rigidbody = GetComponent<Rigidbody>();
         _currentCondition = Conditions.CT_NONE;
     }
-
     private void Update()
     {
         if (Variables.firstTouch == 1)
         {
             isFoward = true;
-            transform.position += new Vector3(0f, 0f, fowardSpeed * Time.deltaTime);
-            transform.Rotate(Vector3.right,Space.World);
+            transform.position += new Vector3(0f, 0f, Variables.fowardsSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.right * Time.deltaTime,Space.World);
             foreach (var bounders in bounderVector)
             {
-                bounders.transform.position += new Vector3(0f, 0f, fowardSpeed * Time.deltaTime);
+                bounders.transform.position += new Vector3(0f, 0f, Variables.fowardsSpeed * Time.deltaTime);
             }
         }
         
@@ -81,14 +80,11 @@ namespace Player
 
     private void LateUpdate()
     {
-        if (Variables.firstTouch == 1)
-        {
-            cam.transform.position += new Vector3(0f, 0f, fowardSpeed * Time.deltaTime);
-        }
         switch (_currentCondition)
         {
            case Conditions.CT_BEGAN:
                Variables.firstTouch = 1;
+               Variables.GameCondition = Variables.GC_Started;
                 break;
            case Conditions.CT_MOVED:
                _rigidbody.velocity = new Vector3(_touch.deltaPosition.x * Speed * Time.fixedDeltaTime,
@@ -118,8 +114,20 @@ namespace Player
                 furture.GetComponent<SphereCollider>().enabled = true;
                 furture.GetComponent<Rigidbody>().isKinematic = false;
             }
+            
             StartCoroutine(UIManagerVar.Fade());
+            StartCoroutine(StopGame());
         }
+    }
+
+    private IEnumerator StopGame()
+    {
+        yield return new WaitForSeconds(0.4f);
+        Time.timeScale = 0.5f;
+        yield return new WaitForSeconds(0.2f);
+        Variables.GameCondition = Variables.GC_ENDED;
+        yield return new WaitForSeconds(1f);
+        Time.timeScale = 0f;
     }
 }
 }

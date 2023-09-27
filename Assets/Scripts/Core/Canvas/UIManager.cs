@@ -2,10 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Core.Tag;
-using UnityEditor.TerrainTools;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Core.Canvas
 {
@@ -16,9 +15,13 @@ namespace Core.Canvas
         private static int CT_OFF = 0, CT_ON = 1;
         private float _fadeOutInTime = 0.5f;
         private int _effectControl = 0;
-
-        public bool isGameStarted;
+        public bool isGameStarted, isGameRestart;
         private bool canRepat = false;
+        /*
+         * Panels
+         */
+        [SerializeField] private GameObject _restartPanel;
+
         /*
          * BUTTONS
          */
@@ -26,6 +29,8 @@ namespace Core.Canvas
         [SerializeField] private GameObject soundOpen, soundClose; 
         [SerializeField] private GameObject vibrationOpen, vibrationClose; 
         [SerializeField] private GameObject [] gameBegin; 
+        [SerializeField] private GameObject restartButton; 
+        [SerializeField] private GameObject adsButton; 
         //[SerializeField] private GameObject [] gameEnd; 
         private string _privacyPolicyUrl = "https://www.emirhanmamak.com/privacy-policy/";
         private string _termsOfUse = "https://www.emirhanmamak.com/term-of-use/";
@@ -35,8 +40,23 @@ namespace Core.Canvas
             CheckHasKey();
             CheckConditions();
             StartCoroutine(GameBegin());
+            StartCoroutine(GameRestart());
         }
+        private void Update()
+        {
+            if (Variables.GameCondition == Variables.GC_Started && !canRepat)
+            {
+                isGameStarted = true;
+                isGameRestart = false;
+                canRepat = true;
+            }
 
+            if (Variables.GameCondition == Variables.GC_ENDED)
+            {
+                isGameRestart = true;
+                isGameStarted = false;
+            }
+        }
         IEnumerator GameBegin()
         {
             yield return new WaitUntil(() => isGameStarted);
@@ -44,15 +64,13 @@ namespace Core.Canvas
             FirstTouch();
             //Debug.Log("Once Worked");
         }
-        private void Update()
+        public IEnumerator GameRestart()
         {
-            if (Variables.firstTouch == 1 && !canRepat)
-            {
-                isGameStarted = true;
-                canRepat = true;
-            }
+            yield return new WaitUntil(() => isGameRestart);
+            yield return new WaitForSeconds(0.3f);
+            _restartPanel.SetActive(true);
+            //Debug.Log("Once Worked");
         }
-
         private void FirstTouch()
         {
             foreach (var closeCanvasObjects in gameBegin)
@@ -147,9 +165,26 @@ namespace Core.Canvas
             settingsOpen.SetActive(true);
             settingsClose.SetActive(false);
         }
+
+        public void RestartButton()
+        {
+            foreach (var openCanvasObjects in gameBegin)
+            {
+                openCanvasObjects.SetActive(true);
+            }
+
+            //Variables.firstTouch = 0;
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        public void AdsButton()
+        {
+            
+        }
         public IEnumerator Fade()
         {
-            //yield return new WaitForSeconds(0.15f);
+           // yield return new WaitForSeconds(0.25f);
             fadeImage.gameObject.SetActive(true);
             while (_effectControl == 0)
             {
