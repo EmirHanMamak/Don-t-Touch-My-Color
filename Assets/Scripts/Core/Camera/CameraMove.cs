@@ -12,7 +12,7 @@ namespace Core.Camera
         private LevelDesignController _levelDesignController;
         void LateUpdate()
         {
-            if (Variables.GameCondition == Variables.GC_Started)
+            if (Variables.GameCondition == Variables.GC_Started && Variables.firstTouch == 1)
             {
                 transform.position += new Vector3(0f, 0f, Variables.fowardsSpeed * Time.deltaTime);
             } 

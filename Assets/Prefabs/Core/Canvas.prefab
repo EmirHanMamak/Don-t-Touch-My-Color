@@ -2327,12 +2327,14 @@ MonoBehaviour:
   isGameStarted: 0
   isGameRestart: 0
   _restartPanel: {fileID: 9001858030236028392}
+  _infoPanel: {fileID: 5098687668111509402}
   settingsOpen: {fileID: 8732435480740036115}
   settingsClose: {fileID: 1017092249593684403}
   soundOpen: {fileID: 469585356435869017}
   soundClose: {fileID: 43986154174146380}
   vibrationOpen: {fileID: 4111340053443079463}
   vibrationClose: {fileID: 2853386969491208160}
+  infoButton: {fileID: 5721009667731005333}
   gameBegin:
   - {fileID: 6264309740217198226}
   - {fileID: 4305599243430758487}
@@ -3128,10 +3130,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5098687668111509402}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 955832835761605020}
+        m_TargetAssemblyTypeName: Core.Canvas.UIManager, Assembly-CSharp
+        m_MethodName: InfoButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3296,7 +3298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

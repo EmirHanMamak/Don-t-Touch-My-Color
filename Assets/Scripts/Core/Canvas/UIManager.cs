@@ -21,6 +21,7 @@ namespace Core.Canvas
          * Panels
          */
         [SerializeField] private GameObject _restartPanel;
+        [SerializeField] private GameObject _infoPanel;
 
         /*
          * BUTTONS
@@ -28,6 +29,7 @@ namespace Core.Canvas
         [SerializeField] private GameObject settingsOpen, settingsClose;
         [SerializeField] private GameObject soundOpen, soundClose; 
         [SerializeField] private GameObject vibrationOpen, vibrationClose; 
+        [SerializeField] private GameObject infoButton; 
         [SerializeField] private GameObject [] gameBegin; 
         [SerializeField] private GameObject restartButton; 
         [SerializeField] private GameObject adsButton; 
@@ -39,13 +41,14 @@ namespace Core.Canvas
         {
             CheckHasKey();
             CheckConditions();
-            StartCoroutine(GameBegin());
-            StartCoroutine(GameRestart());
+            RestartPanels();
         }
+
         private void Update()
         {
-            if (Variables.GameCondition == Variables.GC_Started && !canRepat)
+            if (Variables.GameCondition == Variables.GC_Started && !canRepat && Variables.firstTouch == 1)
             {
+                StartCoroutine(GameBegin());
                 isGameStarted = true;
                 isGameRestart = false;
                 canRepat = true;
@@ -53,20 +56,20 @@ namespace Core.Canvas
 
             if (Variables.GameCondition == Variables.GC_ENDED)
             {
+                StartCoroutine(GameRestart());
                 isGameRestart = true;
                 isGameStarted = false;
+                canRepat = true;
             }
         }
         IEnumerator GameBegin()
         {
-            yield return new WaitUntil(() => isGameStarted);
             yield return new WaitForSeconds(0.3f);
             FirstTouch();
             //Debug.Log("Once Worked");
         }
         public IEnumerator GameRestart()
         {
-            yield return new WaitUntil(() => isGameRestart);
             yield return new WaitForSeconds(0.3f);
             _restartPanel.SetActive(true);
             //Debug.Log("Once Worked");
@@ -77,6 +80,7 @@ namespace Core.Canvas
             {
                 closeCanvasObjects.SetActive(false);
             }
+            _infoPanel.SetActive(false);
         }
         private void CheckConditions()
         {
@@ -166,21 +170,31 @@ namespace Core.Canvas
             settingsClose.SetActive(false);
         }
 
+        public void InfoButton()
+        {
+            _infoPanel.SetActive(true);
+        }
         public void RestartButton()
         {
             foreach (var openCanvasObjects in gameBegin)
             {
                 openCanvasObjects.SetActive(true);
             }
-
-            //Variables.firstTouch = 0;
             Time.timeScale = 1f;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Variables.firstTouch = 0;
+            Variables.GameCondition = Variables.GC_Started;
+            SceneManager.LoadScene(Application.loadedLevel);
+            isGameRestart = false;
         }
 
         public void AdsButton()
         {
             
+        }
+        private void RestartPanels()
+        {
+            _restartPanel.SetActive(false);
+            _infoPanel.SetActive(false);
         }
         public IEnumerator Fade()
         {

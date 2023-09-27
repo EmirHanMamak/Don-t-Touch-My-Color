@@ -5,6 +5,7 @@ using Core.Camera;
 using Core.Canvas;
 using Core.Level;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Player
 {
@@ -31,8 +32,7 @@ namespace Player
     private Touch _touch;
     private Conditions _currentCondition;
     private LevelDesignController _levelDesignController;
-
-    private bool isFoward, isBack, isRight, isLeft = false;
+    private static int _firstFinger = 0, _secondFinger = 1, _thirdFinger = 2, _fourthFinger = 3;
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -42,7 +42,6 @@ namespace Player
     {
         if (Variables.firstTouch == 1)
         {
-            isFoward = true;
             transform.position += new Vector3(0f, 0f, Variables.fowardsSpeed * Time.deltaTime);
             transform.Rotate(Vector3.right * Time.deltaTime,Space.World);
             foreach (var bounders in bounderVector)
@@ -53,7 +52,7 @@ namespace Player
         
         if (Input.touchCount > 0)
         {
-            _touch = Input.GetTouch(0);
+            _touch = Input.GetTouch(_firstFinger);
             switch (_touch.phase)
             {
                 case TouchPhase.Began:
@@ -83,13 +82,20 @@ namespace Player
         switch (_currentCondition)
         {
            case Conditions.CT_BEGAN:
-               Variables.firstTouch = 1;
-               Variables.GameCondition = Variables.GC_Started;
+               if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(_firstFinger).fingerId))
+               {
+                   Variables.firstTouch = 1;
+                   Variables.GameCondition = Variables.GC_Started;    
+               }
                 break;
            case Conditions.CT_MOVED:
-               _rigidbody.velocity = new Vector3(_touch.deltaPosition.x * Speed * Time.fixedDeltaTime,
-                   transform.position.y,
-                   _touch.deltaPosition.y * Speed * Time.fixedDeltaTime);
+               if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(_firstFinger).fingerId))
+               {
+                   _rigidbody.velocity = new Vector3(_touch.deltaPosition.x * Speed * Time.fixedDeltaTime,
+                       transform.position.y,
+                       _touch.deltaPosition.y * Speed * Time.fixedDeltaTime);   
+               }
+
                break;
            case Conditions.CT_CANCELED:
                break;
