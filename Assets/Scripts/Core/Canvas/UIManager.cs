@@ -64,10 +64,23 @@ namespace Core.Canvas
                 canRepat = true;
             }
 
-            if (Variables.GameCondition == Variables.GC_NEXTLEVEL)
+            if (Variables.GameCondition == Variables.GC_NEXTLEVEL && canRepat)
             {
                 _finishLevelPanel.SetActive(true);
+                StartCoroutine(FinishPanel());
+                canRepat = false;
             }
+        }
+
+        IEnumerator FinishPanel()
+        {
+            for (int i = 0; i < _finishLevelPanel.gameObject.transform.childCount; i++)
+            {
+                yield return new WaitForSeconds(0.5f);
+                _finishLevelPanel.transform.GetChild(i).gameObject.SetActive(true);
+            }
+            Debug.Log("giririytisdgs");
+            yield return null;
         }
         IEnumerator GameBegin()
         {
