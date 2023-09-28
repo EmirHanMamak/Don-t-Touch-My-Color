@@ -1702,7 +1702,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8409753087848571416}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: RewardedAds, Assembly-CSharp
+        m_MethodName: ShowRewardedAd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1016896507898424256
 GameObject:
   m_ObjectHideFlags: 0
@@ -3521,7 +3533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
   _finishLine: {fileID: 0}
-  _fillImage: {fileID: 0}
+  _fillImage: {fileID: 3151287113227945877}
   fadeImage: {fileID: 1531392001428894407}
   settingsAnimator: {fileID: 759862942343510542}
   isGameStarted: 0
@@ -3530,6 +3542,7 @@ MonoBehaviour:
   _restartPanel: {fileID: 9001858030236028392}
   _infoPanel: {fileID: 5098687668111509402}
   _finishLevelPanel: {fileID: 4890753679420808617}
+  _interstitialAds: {fileID: 0}
   settingsOpen: {fileID: 8732435480740036115}
   settingsClose: {fileID: 1017092249593684403}
   soundOpen: {fileID: 469585356435869017}
@@ -4251,7 +4264,7 @@ GameObject:
   - component: {fileID: 7868941529428216667}
   - component: {fileID: 4511378694066197246}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: NextLevelLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4408,7 +4421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.46203613, y: -7.376465}
+  m_AnchoredPosition: {x: 0.46191406, y: -7.376465}
   m_SizeDelta: {x: 77.4517, y: 51.6345}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7432356582143033680
@@ -4561,7 +4574,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -22.592773}
   m_SizeDelta: {x: 50.8335, y: 90.371}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8549752201530796988
@@ -5742,6 +5755,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InterstitialAds, Assembly-CSharp
+        m_MethodName: ShowInterstitialAd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7183345689337668037
 GameObject:
   m_ObjectHideFlags: 0
@@ -6305,7 +6330,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -681.395}
+  m_AnchoredPosition: {x: 0, y: -121.87378}
   m_SizeDelta: {x: 1122, y: 500}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &3373716933646240097
@@ -6701,7 +6726,7 @@ GameObject:
   - component: {fileID: 4162183474625621135}
   - component: {fileID: 3254155344641201583}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: CurrentLevelLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
