@@ -12,11 +12,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] private InterstitialAds _interstitialAds;
     private void OnTriggerEnter(Collider other)
     {
+        //IF FINISH TO LEVEL AND HIT LEVEL FINSH LINE
         if (other.gameObject.CompareTag(TagList.Player) && this.gameObject.CompareTag(TagList.FinishLine))
         {
+            LevelManager levelManager = new LevelManager();
+            levelManager.SaveNextLevel();
             Variables.GameCondition = Variables.GC_NEXTLEVEL;
             _rewardedAds.LoadRewardedAd();
-            //_interstitialAds.LoadLoadInterstitialAd();
+            _interstitialAds.LoadLoadInterstitialAd();
             Variables.firstTouch = 0;
         }
     }

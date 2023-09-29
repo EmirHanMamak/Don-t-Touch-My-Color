@@ -134,11 +134,11 @@ namespace Core.Canvas
              */
             if (PlayerPrefs.GetInt(TagList.PP_Haptic) == CT_ON)
             {
-                HapticButtonOn();
+                HapticButtonOff();
             }
             else if (PlayerPrefs.GetInt(TagList.PP_Haptic) == CT_OFF)
             {
-                HapticButtonOff();
+                HapticButtonOn();
             }
         }
 
@@ -224,7 +224,8 @@ namespace Core.Canvas
         public void NextLevelButton()
         {
             Time.timeScale = 1f;
-            SceneManager.LoadScene(Application.loadedLevel + 1);
+         LevelManager levelManager = new LevelManager();
+            levelManager.LoadNextLevel();
         }
         public void AdsButton()
         {

@@ -15,7 +15,7 @@ public class BannerAds : MonoBehaviour
   private string _adUnitId = "unused";
 #endif
     BannerView _bannerView;
-    void Start()
+    public void Start()
     {
         // Initialize the Google Mobile Ads SDK.
         MobileAds.Initialize((InitializationStatus initStatus) =>

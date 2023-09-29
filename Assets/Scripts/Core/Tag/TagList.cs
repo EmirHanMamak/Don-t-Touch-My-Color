@@ -14,5 +14,10 @@ namespace Core.Tag
         public static string FinishGround = "FinishGround";
         public static string FinishLine = "FinishLine";
         public static string Player = "Player";
+        
+        /*
+         * PlayerPrefabs Names
+         */
+        public static string CurrentLevelIndex = "CurrentLevelIndex";
     }
 }
