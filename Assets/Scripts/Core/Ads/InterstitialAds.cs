@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,8 @@ using GoogleMobileAds.Api;
 
 public class InterstitialAds : MonoBehaviour
 {
+    [SerializeField] private SaveControler _saveControler;
+
     // These ad units are configured to always serve test ads.
 #if UNITY_ANDROID
     private string _adUnitId = "ca-app-pub-3940256099942544/1033173712";
@@ -23,6 +26,7 @@ public class InterstitialAds : MonoBehaviour
             // This callback is called once the MobileAds SDK is initialized.
         });
     }
+
     public void LoadLoadInterstitialAd()
     {
         // Clean up the old ad before loading a new one.
@@ -61,6 +65,8 @@ public class InterstitialAds : MonoBehaviour
         {
             Debug.Log("Showing interstitial ad.");
             _interstitialAd.Show();
+            _saveControler.AddCoin(100);
+
         }
         else
         {

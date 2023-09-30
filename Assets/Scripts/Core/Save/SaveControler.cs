@@ -10,6 +10,7 @@ public class SaveControler : MonoBehaviour
     /*
      * Coin
      */
+    //public static SaveControler SaveControlerStatic;
     [SerializeField] private TMP_Text coinLabel;
     private void Start()
     {

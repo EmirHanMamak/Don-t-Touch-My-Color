@@ -7,6 +7,7 @@ using GoogleMobileAds.Api;
 
 public class RewardedAds : MonoBehaviour
 {
+    [SerializeField]  private SaveControler _saveControler;
     // These ad units are configured to always serve test ads.
 #if UNITY_ANDROID
     private string _adUnitId = "ca-app-pub-3940256099942544/5224354917";
@@ -70,9 +71,7 @@ public class RewardedAds : MonoBehaviour
             _rewardedAd.Show((Reward reward) =>
             {
                 // TODO: Reward the user.
-                PlayerPrefs.SetInt(TagList.Coin, PlayerPrefs.GetInt(TagList.Coin) + 200);
-                Debug.Log("Rewards Gived by Emir.");
-                //Debug.Log(String.Format(rewardMsg, reward.Type, reward.Amount));
+                _saveControler.AddCoin(300);
             });
         }
     }

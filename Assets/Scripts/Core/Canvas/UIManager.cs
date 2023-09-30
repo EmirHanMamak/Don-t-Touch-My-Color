@@ -41,8 +41,9 @@ namespace Core.Canvas
         [SerializeField] private GameObject vibrationOpen, vibrationClose; 
         [SerializeField] private GameObject infoButton; 
         [SerializeField] private GameObject [] gameBegin; 
-        [SerializeField] private GameObject restartButton; 
-        [SerializeField] private GameObject adsButton; 
+        [SerializeField] private GameObject restartButton;
+
+        [SerializeField] private GameObject adsNoThanksButton, adsVideoRewardButton, contiuneButton; 
         //[SerializeField] private GameObject [] gameEnd; 
         private string _privacyPolicyUrl = "https://www.emirhanmamak.com/privacy-policy/";
         private string _termsOfUse = "https://www.emirhanmamak.com/term-of-use/";
@@ -223,16 +224,26 @@ namespace Core.Canvas
             isGameRestart = false;
         }
 
-        public void NextLevelButton()
+        public void ContiuneNextLevelButton()
         {
             Time.timeScale = 1f;
-         LevelManager levelManager = new LevelManager();
+            LevelManager levelManager = new LevelManager();
             levelManager.LoadNextLevel();
         }
-        public void AdsButton()
+        public void adsNoThanks()
         {
-            
+            contiuneButton.SetActive(true);
+            adsNoThanksButton.SetActive(false);
+            adsVideoRewardButton.SetActive(false);
         }
+
+        public void adsVideoReward()
+        {
+            adsNoThanksButton.SetActive(false);
+            adsVideoRewardButton.SetActive(false);
+            contiuneButton.SetActive(true);
+        }
+        
         private void RestartPanels()
         {
             _restartPanel.SetActive(false);
