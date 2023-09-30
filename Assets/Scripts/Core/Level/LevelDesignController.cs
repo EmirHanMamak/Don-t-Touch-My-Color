@@ -13,6 +13,7 @@ namespace Core.Level
         public LevelDesign[] LevelDesign;
         private Renderer _renderer;
         private SceneManager _sceneManager;
+
         
         private void Awake()
         {
@@ -20,7 +21,6 @@ namespace Core.Level
         }
         private void Start()
         {
-    
             Debug.Log(SceneManager.GetActiveScene().name);
             for (int i = 0; i < LevelDesign.Length; i++)
             {

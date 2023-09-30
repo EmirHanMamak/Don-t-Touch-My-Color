@@ -74,6 +74,7 @@ public class InterstitialAds : MonoBehaviour
         {
            /* Debug.Log(String.Format("Interstitial ad paid {0} {1}.",
                 adValue.Value,
+                
                 adValue.CurrencyCode));*/
         };
         // Raised when an impression is recorded for an ad.

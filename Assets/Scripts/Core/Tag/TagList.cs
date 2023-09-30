@@ -19,5 +19,6 @@ namespace Core.Tag
          * PlayerPrefabs Names
          */
         public static string CurrentLevelIndex = "CurrentLevelIndex";
+        public static string Coin = "Coin";
     }
 }

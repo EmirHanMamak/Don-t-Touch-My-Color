@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Core.Tag;
 using UnityEngine;
 using GoogleMobileAds;
 using GoogleMobileAds.Api;
@@ -69,6 +70,8 @@ public class RewardedAds : MonoBehaviour
             _rewardedAd.Show((Reward reward) =>
             {
                 // TODO: Reward the user.
+                PlayerPrefs.SetInt(TagList.Coin, PlayerPrefs.GetInt(TagList.Coin) + 200);
+                Debug.Log("Rewards Gived by Emir.");
                 //Debug.Log(String.Format(rewardMsg, reward.Type, reward.Amount));
             });
         }
