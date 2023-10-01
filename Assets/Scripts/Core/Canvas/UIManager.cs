@@ -108,6 +108,7 @@ namespace Core.Canvas
         public IEnumerator GameRestart()
         {
             yield return new WaitForSeconds(0.3f);
+            //_rewardedAds.LoadRewardedAd();
             _restartPanel.SetActive(true);
             //Debug.Log("Once Worked");
         }
@@ -235,6 +236,10 @@ namespace Core.Canvas
             contiuneButton.SetActive(true);
             adsNoThanksButton.SetActive(false);
             adsVideoRewardButton.SetActive(false);
+        }
+        public void countinueWithAds()
+        {
+            
         }
 
         public void adsVideoReward()

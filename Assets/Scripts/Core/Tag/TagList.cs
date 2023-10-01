@@ -14,6 +14,7 @@ namespace Core.Tag
         public static string FinishGround = "FinishGround";
         public static string FinishLine = "FinishLine";
         public static string Player = "Player";
+        public static string SpawnPoints = "SpawnPoints";
         
         /*
          * PlayerPrefabs Names

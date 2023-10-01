@@ -5,12 +5,12 @@ using UnityEngine;
 public class SingletonBanner : MonoBehaviour
 {
     public static SingletonBanner bannerInstance = null;
-    private void Start()
+    private void Awake()
     {
+        DontDestroyOnLoad(this);
         if (bannerInstance == null)
         {
             bannerInstance = this;
-            DontDestroyOnLoad(this);
         }
         else if (this != bannerInstance)
         {
