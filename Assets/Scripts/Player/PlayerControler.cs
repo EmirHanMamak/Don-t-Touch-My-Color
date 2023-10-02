@@ -34,7 +34,7 @@ namespace Player
     private Conditions _currentCondition;
     private LevelDesignController _levelDesignController;
     private static int _firstFinger = 0, _secondFinger = 1, _thirdFinger = 2, _fourthFinger = 3;
-    private bool workOnce;
+    public bool workOnce;
     private void Awake()
     {
         workOnce = false;
@@ -118,7 +118,6 @@ namespace Player
         if (hit.gameObject.CompareTag("Enemy"))
         {
             PlayerRespawner playerRespawner = new PlayerRespawner();
-            playerRespawner.SetPlayerZPos(transform.position.z);
             playerRespawner.isPlayerCrash = true;
             CameraShackVar.CameraShackCall();
             gameObject.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
@@ -148,6 +147,19 @@ namespace Player
         Variables.GameCondition = Variables.GC_ENDED;
         yield return new WaitForSeconds(1f);
         Time.timeScale = 0f;
+    }
+
+    public void RestartPlayerSettings()
+    {
+        Variables.firstTouch = 0;
+        workOnce = false;
+        gameObject.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
+        foreach (var furture in Furtures)
+        {
+            furture.gameObject.transform.position = new Vector3(0, 0, 0);
+            furture.GetComponent<SphereCollider>().enabled = false;
+            furture.GetComponent<Rigidbody>().isKinematic = true;
+        }
     }
 }
 }

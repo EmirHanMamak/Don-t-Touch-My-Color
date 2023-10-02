@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Core;
 using Core.Tag;
 using UnityEngine;
 using GoogleMobileAds;
@@ -8,6 +9,7 @@ using GoogleMobileAds.Api;
 public class RewardedAds : MonoBehaviour
 {
     [SerializeField]  private SaveControler _saveControler;
+    [SerializeField] private PlayerRespawner _playerRespawner;
     // These ad units are configured to always serve test ads.
 #if UNITY_ANDROID
     private string _adUnitId = "ca-app-pub-3940256099942544/5224354917";
@@ -71,7 +73,19 @@ public class RewardedAds : MonoBehaviour
             _rewardedAd.Show((Reward reward) =>
             {
                 // TODO: Reward the user.
-                _saveControler.AddCoin(300);
+                if (Variables.GameCondition == Variables.GC_NEXTLEVEL)
+                {
+                    Debug.Log("Save COin WOrked in REwardsADs");
+
+                    _saveControler.AddCoin(300);     
+                }
+                else if (Variables.GameCondition == Variables.GC_ENDED)
+                {
+                    // Respawner Player
+                    _playerRespawner.NearestPlayerSpawner();
+                    Variables.GameCondition = Variables.GC_Started;
+                    Debug.Log("Player REspawner WOrked in REwardsADs");
+                }
             });
         }
     }

@@ -3942,7 +3942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c148928859cba49ae2474848419269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
+  _player: {fileID: 2784964941971731788, guid: 138bd705f014d1b4ab04af712d13c23b, type: 3}
   _finishLine: {fileID: 0}
   _fillImage: {fileID: 3151287113227945877}
   fadeImage: {fileID: 1531392001428894407}
@@ -5043,7 +5043,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5555450414546389531
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6918,12 +6918,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+        m_TargetAssemblyTypeName: RewardedAds, Assembly-CSharp
+        m_MethodName: ShowRewardedAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
