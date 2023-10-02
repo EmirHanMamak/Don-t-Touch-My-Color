@@ -1487,9 +1487,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603064309252532621, guid: defe056e02b7f7548b8bb559d2ed5676,
         type: 3}
+      propertyPath: _RewardedAds
+      value: 
+      objectReference: {fileID: 7626486581561668028}
+    - target: {fileID: 5603064309252532621, guid: defe056e02b7f7548b8bb559d2ed5676,
+        type: 3}
       propertyPath: _rewardedAds
       value: 
       objectReference: {fileID: 7626486581561668028}
+    - target: {fileID: 5603064309252532621, guid: defe056e02b7f7548b8bb559d2ed5676,
+        type: 3}
+      propertyPath: _InterstitialAds
+      value: 
+      objectReference: {fileID: 4730088449900602170}
     - target: {fileID: 5603064309252532621, guid: defe056e02b7f7548b8bb559d2ed5676,
         type: 3}
       propertyPath: _interstitialAds

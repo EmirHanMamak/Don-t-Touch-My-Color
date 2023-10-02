@@ -8,6 +8,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public RewardedAds _RewardedAds;
+    public InterstitialAds _InterstitialAds;
     private int _currentLevelReward;
     private void OnTriggerEnter(Collider other)
     {
@@ -16,6 +18,8 @@ public class GameManager : MonoBehaviour
         {
             SaveControler saveControler = new SaveControler();
             LevelManager levelManager = new LevelManager();
+            _RewardedAds.LoadRewardedAd();
+            _InterstitialAds.LoadLoadInterstitialAd();
             levelManager.SaveNextLevel();
             Variables.firstTouch = 0;
             Variables.GameCondition = Variables.GC_NEXTLEVEL;
